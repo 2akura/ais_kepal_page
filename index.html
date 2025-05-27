@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Fun Cup Rahmah</title>
+  <link rel="stylesheet" href="styling.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form 
+  method="POST" 
+  action="YOUR_WEBAPP_URL"
+>
+    <div class="boxxy">
+    <p>Custom your order!</p>
+  <div class="form-container">
+    <label> <input type="text" placeholder="Your Name" id="name" required></label><br>
+    <label> <input type="text" placeholder="Room No. cth C3-15" id="room" required></label>
+  </div>
+    <br>
+  <div class="note">
+    Please keep submission in given order to keep the process proceed smoothly 
+  </div>
+
+  <div class="form-category">
+    Choose your Favourite :
+  </div>
+  <div class="radio-container">
+  <input checked="" id="radio-ABC" name="flavor" value='{"name":"ABC", "price":3.00}' type='radio' />
+  <label for="radio-ABC">ABC <span class="price">RM3.00</span></label>
+    
+  <input id="radio-IceKepalchocolate" name="flavor" value='{"name":"Ice Kepal chocolate", "price":3.00}' type="radio" />
+  <label for="radio-IceKepalchocolate">Ais Kacang chocolate <span class="price">RM3.00</span></label>
+    
+  <input id="radio-IceKepalstrawberry" name="flavor" value='{"name":"Ice Kepal strawberry", "price":3.00}' type="radio" />
+  <label for="radio-IceKepalstrawberry">Ais Kacang strawberry <span class="price">RM3.00</span></label>
+    
+  <input id="radio-IceKepalmatcha" name="flavor" value='{"name":"Ice Kepal matcha", "price":3.00}'type="radio" />
+  <label for="radio-IceKepalmatcha">Ais Kacang matcha <span class="price">RM3.00</span></label>
+
+  <div class="glider-container">
+    <div class="glider"></div>
+  </div>
+</div>
+
+
+<div class="form-category">
+    Mix it with :
+  </div>
+      
+<div class="radio-container">
+  <input checked="" id="radio-none" name="mixedflavor" value='{"name":"None", "price":0.00}' type='radio' />
+  <label for="radio-none">None <span class="price">RM0.00</span></label>
+  
+  <input id="radio-chocolate" name="mixedflavor" value='{"name":"chocolate", "price":1.00}' type="radio" />
+  <label for="radio-chocolate">Chocolate <span class="price">RM1.00</span></label>
+  
+  <input id="radio-strawberry" name="mixedflavor" value='{"name":"strawberry", "price":1.00}' type="radio" />
+  <label for="radio-strawberry">Strawberry <span class="price">RM1.00</span></label>
+  
+  <input id="radio-matcha" name="mixedflavor" value='{"name":"matcha", "price":1.00}'type="radio" />
+  <label for="radio-matcha">Matcha <span class="price">RM1.00</span></label>
+
+  <div class="glider-container">
+    <div class="glider"></div>
+  </div>
+</div>
+
+<div class="form-category">
+    Top it up with our delicious topping options :
+  </div>
+      
+    <div class=extras-container>
+   <article class="whipped-cream">
+  <input 
+    type="checkbox" 
+    id="whipped-cream"
+    name="feature" 
+    value='{"name":"whipped cream", "price":0.50}' 
+  />
+  <div>
+    <span>
+     whipped <br/>
+      cream <br/>
+       + RM0.50
+    </span>
+  </div>
+</article>
+  
+  
+<article class="saltedcaramel-drizzle">
+  <input 
+    type="checkbox" 
+    id="saltedcaramel-drizzle"
+    value='{"name":"salted caramel drizzle", "price":0.50}' 
+  />
+  <div>
+    <span>
+     salted caramel <br/>
+      drizzle <br/>
+       + RM0.50
+    </span>
+  </div>
+</article>
+
+      
+<article class="biscoff">
+  <input 
+    type="checkbox" 
+    id="biscoff"
+    name="feature" 
+    value='{"name":"biscoff", "price":1.00}' 
+  />
+  <div>
+    <span>
+     biscoff <br/>
+       + RM1.00
+    </span>
+  </div>
+</article>
+
+      
+<article class="cookiesn-cream">
+  <input 
+    type="checkbox" 
+    id="cookiesn-cream"
+    name="feature" 
+    value='{"name":"cookies n cream", "price":1.00}' 
+  />
+  <div>
+    <span>
+     cookies <br/>
+      n<br/>
+       cream <br/>
+        + RM1.00
+    </span>
+  </div>
+</article>
+
+      
+    </div>
+      <div class="last-notecontainer">
+      <div class="last-note">
+      click the 'Order' button below to further proceed your order 
+      </div>
+      </div>
+    <button type="submit"class="submit">Order</button>
+</div>
+    </form>
+
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
