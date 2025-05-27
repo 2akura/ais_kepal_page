@@ -304,19 +304,39 @@ body{
   color: gray;
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .boxxy {
     width: 90%;
-    height: auto;
     padding: 15px;
+    height: auto;
+    margin: 50px auto;
+  }
+
+  .form-container input[type="text"] {
+    width: 100%;
+    font-size: 14px;
   }
 
   .radio-container label {
     font-size: 14px;
+    padding: 0.75rem;
   }
 
-  .submit {
+  .extras-container article {
+    width: 45%; /* smaller width for stacked layout */
+    height: 80px;
+  }
+
+  .upgrade-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .boxxy .submit {
     right: 0;
-    bottom: 0;
+    bottom: -30px;
+    padding: 10px 20px;
+    font-size: 10px;
   }
 }
+
