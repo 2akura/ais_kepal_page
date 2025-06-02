@@ -29,7 +29,7 @@ document.querySelector('.submit').addEventListener('click', function(event) {
     }
   
     // Toppings
-    const toppings = document.querySelectorAll('input[name="feature"]:checked');
+    const toppings = document.querySelectorAll('input[name="feature[]"]:checked');
     toppings.forEach(t => {
       const item = JSON.parse(t.value);
       total += item.price;
